@@ -1,46 +1,34 @@
-# İmtahan Proqramı
+İmtahan Proqramı
 
-## Quraşdırma
+Quraşdırma:
 
-### 1. Clone edin
-```bash
+1. Repository-ni clone edin:
 git clone https://github.com/HasanRzayev/ProsysHomeWork.git
 cd ProsysHomeWork
-```
 
-### 2. Backend
+2. Backend quraşdırması:
 
-**appsettings.json** faylında connection string-i düzəldin:
-```json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Data Source=YOUR_SERVER\\SQLEXPRESS;Integrated Security=True;TrustServerCertificate=True;"
-  }
-}
-```
+appsettings.json faylında connection string-i düzəldin:
+Data Source=YOUR_SERVER\SQLEXPRESS;Integrated Security=True;TrustServerCertificate=True;
 
-```bash
+Sonra backend papkasına keçin:
 cd backend/ProsysWork
 dotnet restore
 dotnet ef database update
 dotnet run
-```
 
-### 3. Frontend
+3. Frontend quraşdırması:
 
-**frontend/.env** faylı yaradın:
-```
+frontend papkasında .env faylı yaradın və içərisinə yazın:
 REACT_APP_API_URL=http://localhost:5195/api
-```
 
-```bash
+Sonra:
 cd frontend
 npm install
 npm start
-```
 
-## İşə Salınması
+İşə salınması:
 
-1. Backend: `cd backend/ProsysWork` → `dotnet run`
-2. Frontend: `cd frontend` → `npm start`
-3. Browser: `http://localhost:3000`
+Backend: backend/ProsysWork papkasında dotnet run
+Frontend: frontend papkasında npm start
+Browser: http://localhost:3000
