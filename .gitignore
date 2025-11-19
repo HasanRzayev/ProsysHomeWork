@@ -1,0 +1,31 @@
+# Backend
+backend/ProsysWork/bin/
+backend/ProsysWork/obj/
+backend/ProsysWork/.vs/
+backend/ProsysWork/.vscode/
+backend/ProsysWork/*.user
+backend/ProsysWork/*.suo
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+

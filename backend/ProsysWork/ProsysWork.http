@@ -1,0 +1,6 @@
+@ProsysWork_HostAddress = http://localhost:5195
+
+GET {{ProsysWork_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
